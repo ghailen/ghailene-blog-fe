@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <h1><a href="" class="title"> Ghailene blog</a></h1>
+
+      </div>
+
+
+      <div class="col-md-2">
+        <div class="row">
+        <div class="my-icon col-md-9">
+        </div>
+
+        <div class="my-icon col-md-3" *ngIf="authService.isAuthenticated()">
+          <a routerLink="/add-post" class="new-post"> <img src="../assets/addPost.png" alt="image"
+                                                           height="30" width="30"> </a>
+          <button class="my-icon logout button-logout" (click)="logout()"><img src="../assets/logout.png" alt="image"
+                                                                               height="30" width="30"></button>
+        </div>
+        <div class="my-icon col-md-3" *ngIf="!authService.isAuthenticated()">
+          <a routerLink="/login"><img src="../assets/login.png" alt="image" height="30"
+                                      width="30"></a>
+      <!--    <a routerLink="/register"><img src="./assets/register.png" alt="image"
+                                         height="30" width="30"></a> -->
+        </div>
+
+
+      </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.header {
+  padding: 5px 20px;
+  background: grey;
+}
+
+.title {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.login, .register {
+  float: right;
+  text-decoration: none;
+  color: aliceblue;
+  padding-top: 10px;
+}
+
+.logout, .new-post {
+  float: right;
+  color: aliceblue;
+  padding-top: 10px;
+}
+
+.logout:hover, .new-post:hover {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.my-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-logout {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+

@@ -1,0 +1,19 @@
+<div class="content">
+  <div class="container">
+    <div class="row" *ngFor="let post of objList ">
+      <div class="blogpost">
+
+
+        <div class="card">
+          <h5 class="card-header"> <img src="assets/writer.png" width="30" height="30"> Author: {{post.userName}} </h5>
+          <div class="card-body">
+            <h5 class="card-title">{{post.title}}</h5>
+            <p class="card-text" [innerHTML]="post.content">></p>
+          <!--<a type="button" href="/post/{{post.id}}" class="read-more btn btn-primary">Read More</a>-->
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
